@@ -1,0 +1,33 @@
+/*
+Theme Name:   unblock Child
+Description:  unblock Child Theme
+Author:       Marco Lapegna  
+Template:     unblock
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+#back-to-top-wrapper {
+	display:none;
+}
+
+.site-footer {
+	display:none;
+}
+
+.bi-search{
+	display:none;
+}
+
+.entry-title::after {
+	display: none;
+}
+
+.author-info {
+	display:none;
+}
+
+.post-cats, .post-tags{
+	display:none;
+}
