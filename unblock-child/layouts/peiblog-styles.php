@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
 /* BLOG LAYOUT
    ====================================================*/
 if (!function_exists('unblock_peiblog_styles')) :
-	function unblock_peiblog_styles()
+	function unblock_peiblog_styles() 
 	{
 
 		$unblock_blog_style = apply_filters('unblock_blog_style', get_theme_mod('unblock_blog_style', 'classic-right'));
@@ -24,7 +24,7 @@ if (!function_exists('unblock_peiblog_styles')) :
 			switch (esc_attr($unblock_blog_style)) {
 
 				case "list":
-					echo '<div class="column-wrapper">';
+					echo '<div class="column-wrapper blog-list">';
 					while ($peiCorner->have_posts()) : $peiCorner->the_post();
 						// Get the post summary
 						get_template_part('template-parts/content/content', $unblock_blog_style !== 'classic-right' ? $unblock_blog_style : '');
@@ -35,7 +35,7 @@ if (!function_exists('unblock_peiblog_styles')) :
 					break;
 
 				case "classic-left":
-					echo '<div class="row column-wrapper"><div class="col-md-8 order-md-2">';
+					echo '<div class="row column-wrapper blog-list"><div class="col-md-8 order-md-2">';
 					while ($peiCorner->have_posts()) : $peiCorner-> the_post();
 						// Get the post summary							
 						get_template_part('template-parts/content/content', $unblock_blog_style !== 'classic-right' ? $unblock_blog_style : '');
@@ -49,7 +49,7 @@ if (!function_exists('unblock_peiblog_styles')) :
 					break;
 
 				default:
-					echo '<div class="row column-wrapper"><div class="col-md-8">';
+					echo '<div class="row column-wrapper blog-list"><div class="col-md-8">';
 					while ($peiCorner->have_posts()) : $peiCorner->the_post();
 						// Get the post summary							
 						get_template_part('template-parts/content/content', $unblock_blog_style !== 'classic-right' ? $unblock_blog_style : '');
