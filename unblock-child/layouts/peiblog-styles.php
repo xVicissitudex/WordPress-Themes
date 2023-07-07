@@ -31,7 +31,7 @@ if (!function_exists('unblock_peiblog_styles')) :
 					endwhile;
 					echo '</div>';
 					// Blog navigation
-					unblock_paging_nav();
+					unblock_peipaging_nav();
 					break;
 
 				case "classic-left":
@@ -45,7 +45,7 @@ if (!function_exists('unblock_peiblog_styles')) :
 					echo '</aside></div>';
 
 					// Blog navigation
-					unblock_paging_nav();
+					unblock_peipaging_nav();
 					break;
 
 				default:
@@ -59,7 +59,7 @@ if (!function_exists('unblock_peiblog_styles')) :
 					echo '</aside></div>';
 
 					// Blog navigation
-					unblock_paging_nav();
+					unblock_peipaging_nav();
 			}
 
 

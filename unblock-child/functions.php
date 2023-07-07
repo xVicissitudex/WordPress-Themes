@@ -19,3 +19,4 @@ add_action('after_setup_theme', 'thumbnail_posts');
 // INCLUDES - ADDITIONAL FUNCTIONS & CLASSES
 
 require get_stylesheet_directory() . '/layouts/peiblog-styles.php';
+require get_stylesheet_directory() . '/template-tags.php';
